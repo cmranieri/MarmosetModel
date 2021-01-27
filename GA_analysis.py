@@ -368,7 +368,7 @@ if __name__=='__main__':
                                                       use_default_clusters=False )
         plot_rat_genotype( bests_genotypes, clusters )
         if flag_spectral:
-            simulate_all_clusters( bests_genotypes, clusters )
+            psd_h, psd_pd, power_h, power_pd, lfp_f = simulate_all_clusters( bests_genotypes, clusters )
             make_plots( psd_h, psd_pd, power_h, power_pd, lfp_f )
         if flag_dynamics:
             clusters_best = [ get_ordered_cluster(bests_genotypes, clusters, i)[0] for i in range(2) ]

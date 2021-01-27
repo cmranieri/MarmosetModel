@@ -220,7 +220,7 @@ def load_all_clusters():
     return psd_h_list, psd_pd_list, power_h_list, power_pd_list, lfp_f
 
 
-def make_plots( psh_h, psd_pd, power_h, power_pd, lfp_f ):
+def make_plots( psd_h, psd_pd, power_h, power_pd, lfp_f ):
     area_names=["StrD1", "StrD2", "TH", "GPi", "GPe", "CtxRS", "CtxFSI", "STN"]
     plot_psd( psd_h, psd_pd, lfp_f, area_names )
     plot_power( power_h, power_pd, area_names )
