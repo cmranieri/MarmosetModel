@@ -168,7 +168,7 @@ def plot_dists( n_clusters ):
 
         test_results = add_stat_annotation( axs, data=df, x='Conditions', y='DTW',
                                             box_pairs=box_pairs,
-                                            test='t-test_paired', text_format='star',
+                                            test='t-test_ind', text_format='star',
                                             loc='inside', verbose=2 )
 
         plt.tight_layout()
@@ -178,7 +178,7 @@ def plot_dists( n_clusters ):
 
 
 if __name__=='__main__':
-    #calc_all_comps()
+    calc_all_comps()
     for i in range( 2 ):
         calc_all_dtw( cluster_id=i )
     plot_dists( n_clusters=2 )

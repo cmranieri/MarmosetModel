@@ -378,7 +378,6 @@ if __name__=='__main__':
                 dynamics.calc_all_dtw( cluster_id=i )
             dynamics.plot_dists( n_clusters=2 )
 
-    #if flag_params: plot_params( bests_genotypes )
     if flag_params:
         plot_params( bests_genotypes, 'results/params2.pdf' )
     if flag_fitness: 
