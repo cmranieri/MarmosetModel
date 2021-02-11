@@ -1,11 +1,6 @@
 TITLE  STN ion channels for single compartment model
 
-COMMENT
-//program from Basal ganglia network model of subthalamic deep brain stimulation (Hahn and McIntyre 2010)
-//derived from: Otsuka model
-//available on : 
-//https://senselab.med.yale.edu/modeldb/ShowModel.cshtml?model=127388
-ENDCOMMENT
+
 
 UNITSON
 
