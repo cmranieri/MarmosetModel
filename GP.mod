@@ -5,8 +5,6 @@ COMMENT
 //derived from: Otsuka model
 //available on : 
 //https://senselab.med.yale.edu/modeldb/ShowModel.cshtml?model=127388
-//Author: Daniel Tamashiro, UnicaDmp 
-//Updated 08/23/2016
 ENDCOMMENT
 
 UNITSON
