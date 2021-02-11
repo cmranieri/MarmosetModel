@@ -1,9 +1,6 @@
 TITLE  All ion channels used in Str models
 
-COMMENT
-//Author: Daniel Tamashiro, Unicamp 
-//Updated 08/23/2016
-ENDCOMMENT
+
 
 NEURON {
 	SUFFIX Str
