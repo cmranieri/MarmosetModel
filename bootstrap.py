@@ -18,9 +18,9 @@ def load_file( fname ):
 h_dict = dict()
 pd_dict = dict()
 
-sns.set( style='darkgrid' )
+#sns.set( style='darkgrid' )
 area_names=["M1", "PUT", "GPe", "GPi", "VL", "STN", "VPL", ""]
-fig, axs = plt.subplots( nrows=3, ncols=4, sharex=True, sharey='row', figsize=(12,5) )
+fig, axs = plt.subplots( nrows=3, ncols=4, sharex=True, sharey='row', figsize=(9,3) )
 for fname in sorted( os.listdir( data_dir ) ):
     data = load_file( fname )
     mtc = re.match( '(H|PD)_(\w+)\.csv', fname )

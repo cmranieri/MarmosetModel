@@ -2,6 +2,7 @@
 import random
 from netpyne import specs, sim
 from scipy import signal
+from scipy.signal import firwin, lfilter
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.io as sio
@@ -725,6 +726,13 @@ class Network:
                                                            'sec': 'soma',
                                                            'loc': 0}
 
+
+    def filter_LFP( self, lfp ):
+        h = firwin( 3, [0.5, 250], fs=1000 )
+        filtered = lfilter( h, 1, lfp )
+        return filtered
+
+
     def extractLFP_SP(self):
         lfp = sim.allSimData['LFP']
         # [ f, t ]
@@ -736,7 +744,8 @@ class Network:
         for i in range( 0, lfp.shape[0], nelec ):
             reg_fft = list()
             for j in range( nelec ):
-                reg_fft.append( signal.welch( lfp[i+j], 1000, nperseg=1024, detrend=False ) )
+                s = self.filter_LFP( lfp[i+j] )
+                reg_fft.append( signal.welch( s, 1000, nperseg=1024, detrend=False ) )
             lfp_f, lfp_fft[i//nelec, :] = np.mean( reg_fft, axis=0 )
         return lfp_f, lfp_fft
 

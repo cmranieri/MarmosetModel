@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
 import seaborn as sns
 import scipy.stats
+from scipy.signal import firwin, lfilter
 import numpy as np
 import pandas
 from GA import set_genotype
@@ -19,7 +20,7 @@ import pickle
 #This function simulate a set of genotypes located in folder "results". See GA_utils.py. Only works for CM.
 
 # load_sims: if True, loads results from simulations previously performed, stored in results/sim_results.pickle 
-load_sims = True
+load_sims = False
 
 # dir_fft: directory containing the subdirectories 'healthy' and 'pd', each with the .npy fft files
 mfr_h  = defaultdict( list )
