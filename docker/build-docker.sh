@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker build -t bg .
+cd ..
+docker build -t bg -f docker/Dockerfile .

@@ -1,0 +1,9 @@
+neuron==8.0.2
+scikit-learn==1.0.2 
+elephant==0.10.0 
+netpyne==1.0.1
+inspyred==1.0.1
+fastdtw==0.3.4
+seaborn==0.11.2
+statannot==0.2.3
+plotly==5.6.0
