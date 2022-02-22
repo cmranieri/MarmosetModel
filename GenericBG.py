@@ -273,7 +273,7 @@ class Network:
                                             'L': 5.642,
                                             'Ra': 1,
                                             'nseg': 1}
-        cellRule['secs']['soma']['mechs']['STN'] = {'dbs': self.dbs,
+        cellRule['secs']['soma']['mechs']['SubTN'] = {'dbs': self.dbs,
                                                     'gkcabar': gkcabar}
         cellRule['secs']['soma']['vinit'] = random.gauss(-62, 5)
         cellRule['secs']['soma']['threshold'] = -10

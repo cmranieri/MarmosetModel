@@ -1,11 +1,11 @@
-TITLE  STN ion channels for single compartment model
+TITLE  SubTN ion channels for single compartment model
 
 
 
 UNITSON
 
 NEURON {
-	SUFFIX STN
+	SUFFIX SubTN
 	NONSPECIFIC_CURRENT ilk
 	NONSPECIFIC_CURRENT icaT,icaL,ikD,ikA,ikAHP,ina, idbs
 

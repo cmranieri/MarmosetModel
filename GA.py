@@ -194,7 +194,7 @@ def set_genotype( cand, net ):
     net.buildStimParams( amp_th  = cand[0],
                          amp_gpe = cand[1],
                          amp_gpi = cand[2])
-    net.netParams.cellParams['STN']['secs']['soma']['mechs']['STN']['gkcabar'] = cand[3] 
+    net.netParams.cellParams['STN']['secs']['soma']['mechs']['SubTN']['gkcabar'] = cand[3] 
     net.netParams.cellParams['GPe']['secs']['soma']['mechs']['GP']['gahp']     = cand[4] 
     net.netParams.cellParams['GPi']['secs']['soma']['mechs']['GP']['gahp']     = cand[4] 
     net.strConnRules( gsynmod = cand[5] )
