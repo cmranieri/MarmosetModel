@@ -1,5 +1,11 @@
 # MarmosetModel
 
+First, compile the ```.mod``` files by running:
+
+```
+nrnivmodl
+```
+
 To build the Docker container:
 
 ```
@@ -17,5 +23,5 @@ bash run-docker.sh
 
 To run a demo of the marmoset model:
 ```
-python Marmoset.py
+python MarmosetBG.py
 ```
