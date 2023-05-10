@@ -1,7 +1,7 @@
-neuron==8.0.2
+neuron==8.0.0
 scikit-learn==1.0.2 
 elephant==0.10.0 
-netpyne==1.0.1
+netpyne==0.8.0
 inspyred==1.0.1
 fastdtw==0.3.4
 seaborn==0.11.2
