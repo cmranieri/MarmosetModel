@@ -914,15 +914,15 @@ class Network:
 
         # lfp and plot
         if lfp:
-            simConfig.analysis['plotRaster'] = True
             simConfig.recordLFP = self.electrodesPos 
             simConfig.saveLFPCells = True
-            simConfig.analysis['plotLFP'] = {'electrodes': ['all'],
-                                              'includeAxon': False,
-                                              #'timeRange': [0, 2000],
-                                              'plots': ['timeSeries', 'locations', 'PSD'],
-                                              # 'plots': ['locations'],
-                                              'showFig': True}
+            #simConfig.analysis['plotRaster'] = True
+            #simConfig.analysis['plotLFP'] = {'electrodes': ['all'],
+            #                                  'includeAxon': False,
+            #                                  'timeRange': [0, 2000],
+            #                                  'plots': ['timeSeries', 'locations', 'PSD'],
+            #                                  'plots': ['locations'],
+            #                                  'showFig': True}
         return simConfig
 
 

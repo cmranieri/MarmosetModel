@@ -16,11 +16,12 @@ class MarmosetBG( Network ):
 
 if __name__=='__main__':
     network = MarmosetBG()
-    network.simulate()
+    network.simulate(lfp=True)
     spikes_dict = network.extractSpikes()
     print('SPIKES')
     for key in spikes_dict.keys():
         print(key)
         print( [s.times for s in spikes_dict[key]] )
     mfr = network.extractMFR()
-    print(mfr)
+    print('MFR', mfr)
+    print('LFP DATA', sim.allSimData['LFPCells'])

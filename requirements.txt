@@ -1,4 +1,4 @@
-neuron==8.0.0
+neuron==8.2.2
 scikit-learn==1.0.2 
 elephant==0.10.0 
 netpyne==0.8.0
